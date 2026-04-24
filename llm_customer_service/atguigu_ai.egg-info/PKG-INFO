@@ -1,0 +1,117 @@
+Metadata-Version: 2.4
+Name: atguigu_ai
+Version: 0.1.0
+Summary: 教学版对话系统 - 基于 LLM 驱动的智能对话架构精简实现
+Home-page: 
+Author: atguigu
+Author-email: 
+License: MIT
+Keywords: conversational-ai chatbot dialogue-system llm langchain
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Education
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: click<9.0.0,>=8.0.0
+Requires-Dist: python-dotenv<2.0.0,>=1.0.0
+Requires-Dist: fastapi<1.0.0,>=0.100.0
+Requires-Dist: uvicorn<1.0.0,>=0.20.0
+Requires-Dist: pydantic<3.0.0,>=2.0.0
+Requires-Dist: pydantic-settings<3.0.0,>=2.0.0
+Requires-Dist: langchain>=0.3.0
+Requires-Dist: langchain-core>=0.3.0
+Requires-Dist: langchain-community>=0.3.0
+Requires-Dist: langchain-openai>=0.2.0
+Requires-Dist: langchain-anthropic>=0.2.0
+Requires-Dist: langgraph>=0.2.0
+Requires-Dist: openai<2.0.0,>=1.0.0
+Requires-Dist: dashscope>=1.20.0
+Requires-Dist: torch>=2.0.0
+Requires-Dist: sentence-transformers>=2.2.0
+Requires-Dist: numpy<3.0.0,>=1.24.0
+Requires-Dist: sqlalchemy<3.0.0,>=2.0.0
+Requires-Dist: pymysql>=1.0.0
+Requires-Dist: neo4j>=5.0.0
+Requires-Dist: neo4j-graphrag>=1.0.0
+Requires-Dist: jieba>=0.42.0
+Requires-Dist: pyyaml<7.0.0,>=6.0.0
+Requires-Dist: ruamel.yaml<1.0.0,>=0.17.0
+Requires-Dist: jinja2<4.0.0,>=3.0.0
+Requires-Dist: aiohttp<4.0.0,>=3.8.0
+Requires-Dist: httpx<1.0.0,>=0.24.0
+Requires-Dist: python-socketio<6.0.0,>=5.0.0
+Requires-Dist: tqdm<5.0.0,>=4.60.0
+Requires-Dist: colorama<1.0.0,>=0.4.0
+Requires-Dist: rich<15.0.0,>=10.0.0
+Requires-Dist: typing-extensions<5.0.0,>=4.0.0
+Requires-Dist: faker>=18.0.0
+Requires-Dist: dbutils>=3.0.0
+Requires-Dist: sqlacodegen>=3.0.0
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0.0; extra == "dev"
+Requires-Dist: pytest-asyncio>=0.21.0; extra == "dev"
+Requires-Dist: pytest-cov>=4.0.0; extra == "dev"
+Requires-Dist: black>=23.0.0; extra == "dev"
+Requires-Dist: isort>=5.12.0; extra == "dev"
+Requires-Dist: mypy>=1.0.0; extra == "dev"
+Requires-Dist: flake8>=6.0.0; extra == "dev"
+Provides-Extra: all
+Requires-Dist: click<9.0.0,>=8.0.0; extra == "all"
+Requires-Dist: python-dotenv<2.0.0,>=1.0.0; extra == "all"
+Requires-Dist: fastapi<1.0.0,>=0.100.0; extra == "all"
+Requires-Dist: uvicorn<1.0.0,>=0.20.0; extra == "all"
+Requires-Dist: pydantic<3.0.0,>=2.0.0; extra == "all"
+Requires-Dist: pydantic-settings<3.0.0,>=2.0.0; extra == "all"
+Requires-Dist: langchain>=0.3.0; extra == "all"
+Requires-Dist: langchain-core>=0.3.0; extra == "all"
+Requires-Dist: langchain-community>=0.3.0; extra == "all"
+Requires-Dist: langchain-openai>=0.2.0; extra == "all"
+Requires-Dist: langchain-anthropic>=0.2.0; extra == "all"
+Requires-Dist: langgraph>=0.2.0; extra == "all"
+Requires-Dist: openai<2.0.0,>=1.0.0; extra == "all"
+Requires-Dist: dashscope>=1.20.0; extra == "all"
+Requires-Dist: torch>=2.0.0; extra == "all"
+Requires-Dist: sentence-transformers>=2.2.0; extra == "all"
+Requires-Dist: numpy<3.0.0,>=1.24.0; extra == "all"
+Requires-Dist: sqlalchemy<3.0.0,>=2.0.0; extra == "all"
+Requires-Dist: pymysql>=1.0.0; extra == "all"
+Requires-Dist: neo4j>=5.0.0; extra == "all"
+Requires-Dist: neo4j-graphrag>=1.0.0; extra == "all"
+Requires-Dist: jieba>=0.42.0; extra == "all"
+Requires-Dist: pyyaml<7.0.0,>=6.0.0; extra == "all"
+Requires-Dist: ruamel.yaml<1.0.0,>=0.17.0; extra == "all"
+Requires-Dist: jinja2<4.0.0,>=3.0.0; extra == "all"
+Requires-Dist: aiohttp<4.0.0,>=3.8.0; extra == "all"
+Requires-Dist: httpx<1.0.0,>=0.24.0; extra == "all"
+Requires-Dist: python-socketio<6.0.0,>=5.0.0; extra == "all"
+Requires-Dist: tqdm<5.0.0,>=4.60.0; extra == "all"
+Requires-Dist: colorama<1.0.0,>=0.4.0; extra == "all"
+Requires-Dist: rich<15.0.0,>=10.0.0; extra == "all"
+Requires-Dist: typing-extensions<5.0.0,>=4.0.0; extra == "all"
+Requires-Dist: faker>=18.0.0; extra == "all"
+Requires-Dist: dbutils>=3.0.0; extra == "all"
+Requires-Dist: sqlacodegen>=3.0.0; extra == "all"
+Requires-Dist: pytest>=7.0.0; extra == "all"
+Requires-Dist: pytest-asyncio>=0.21.0; extra == "all"
+Requires-Dist: pytest-cov>=4.0.0; extra == "all"
+Requires-Dist: black>=23.0.0; extra == "all"
+Requires-Dist: isort>=5.12.0; extra == "all"
+Requires-Dist: mypy>=1.0.0; extra == "all"
+Requires-Dist: flake8>=6.0.0; extra == "all"
+Dynamic: author
+Dynamic: classifier
+Dynamic: description-content-type
+Dynamic: keywords
+Dynamic: license
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
