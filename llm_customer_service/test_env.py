@@ -22,3 +22,4 @@ print(f"HTTP_PROXY: {repr(os.environ.get('HTTP_PROXY', ''))}")
 
 # Check if dotenv loaded the env file
 print(f"\nAll DASHSCOPE vars: {[(k,v) for k,v in os.environ.items() if 'DASH' in k]}")
+#111
